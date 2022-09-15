@@ -12,6 +12,7 @@ def delete_test_folder():
     yield
     shutil.rmtree(os.path.abspath('resources'))
 
+
 def test_create_and_add_in_zip_file():
     newzip = zipfile.ZipFile(os.path.abspath('file.zip'), "w")
     newzip.write('Тест.pdf')
